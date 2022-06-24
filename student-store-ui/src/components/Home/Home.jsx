@@ -1,10 +1,13 @@
-import * as React from "react"
-import "./Home.css"
+import * as React from "react";
+import "./Home.css";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div className="home">
-      <p>Home</p>
+      <div className="home-wrapper">
+        <Hero />
+      </div>
+      <SubNavbar setInput={props.setInput} setCategory={props.setCategory} />
     </div>
-  )
+  );
 }
