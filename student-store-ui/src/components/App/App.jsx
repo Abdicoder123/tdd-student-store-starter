@@ -5,7 +5,7 @@ import Home from "../Home/Home";
 import ProductDetail from "../Product Detail/ProductDetail";
 import ProductView from "../ProductView/ProductView";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react";
+import { BrowserRouter, Route, Routes, Link } from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
@@ -114,23 +114,24 @@ export default function App() {
               path="/"
               element={
                 <Home
-                  handleOnToggle={handleOnToggle}
-                  handleOnCheckoutFormChange={handleOnCheckoutFormChange}
+                  handleAddItemToCart={handleAddItemToCart}
+                  shoppingCart={shoppingCart}
+                  handleRemoveItemFromCart={handleRemoveItemFromCart}
                   products={products}
                 />
               }
             />
             <Route
-              path="/products?:productID"
+              path="/products/:productID"
               element={
                 <ProductDetail
-                  handleAddItemToCart={() => handleAddItemToCart()}
-                  handleRemoveItemFromCart={() => handleRemoveItemFromCart()}
+                  handleAddItemToCart={handleAddItemToCart}
+                  handleRemoveItemFromCart={handleRemoveItemFromCart}
                   shoppingCart={shoppingCart}
                 />
               }
             />
-            <Route path="*" element={<NotFound />} />
+            <Route path="/*" element={<NotFound />} />
           </Routes>
 
           {/* <Navbar />

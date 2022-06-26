@@ -1,13 +1,24 @@
 import * as React from "react";
 import "./Home.css";
 
-export default function Home(props) {
+export default function Home({
+  products,
+  handleAddItemToCart,
+  handleRemoveItemFromCart,
+  shoppingCart,
+}) {
   return (
     <div className="home">
-      <div className="home-wrapper">
-        <Hero />
-      </div>
-      <SubNavbar setInput={props.setInput} setCategory={props.setCategory} />
+      <Navbar />
+      <Sidebar />
+      <Hero />
+
+      <ProductGrid
+        products={products}
+        handleAddItemToCart={handleAddItemToCart}
+        handleRemoveItemFromCart={handleRemoveItemFromCart}
+        shoppingCart={shoppingCart}
+      />
     </div>
   );
 }
