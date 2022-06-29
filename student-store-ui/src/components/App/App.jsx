@@ -5,7 +5,7 @@ import Home from "../Home/Home";
 import ProductDetail from "../Product Detail/ProductDetail";
 import ProductView from "../ProductView/ProductView";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import NotFound from "../NotFound/NotFound";
@@ -16,13 +16,13 @@ export default function App() {
     quantity: 2,
   };
 
-  const [products, setProducts] = useState([]);
-  const [isFetching, setIsFetching] = useState(null);
-  const [error, setError] = useState(null);
-  const [isOpen, setIsOpen] = useState(null);
-  const [shoppingCart, setShoppingCart] = useState([]);
-  const [checkoutForm, setcheckoutForm] = useState(null);
-  const [subtotal, setSubtotal] = useState(null);
+  const [products, setProducts] = React.useState([]);
+  const [isFetching, setIsFetching] = React.useState(null);
+  const [error, setError] = React.useState(null);
+  const [isOpen, setIsOpen] = React.useState(null);
+  const [shoppingCart, setShoppingCart] = React.useState([]);
+  const [checkoutForm, setcheckoutForm] = React.useState(null);
+  const [subtotal, setSubtotal] = React.useState(null);
 
   useEffect(async () => {
     let url = `https://codepath-store-api.herokuapp.com/store`;
@@ -72,16 +72,16 @@ export default function App() {
         if (shoppingCart[i].quantity != 1) {
           shoppingCart[i].quantity--;
           setShoppingCart([...shoppingCart]);
-          var tempPrice =
+          var temporaryPrice =
             subtotal - products.find((item) => item.id === productId).price;
-          setSubtotal(tempPrice);
+          setSubtotal(temporaryPrice);
           return;
         } else {
           shoppingCart.splice(i, 1);
           setShoppingCart([...shoppingCart]);
-          var tempPrice =
+          var temporaryPrice =
             subtotal - products.find((item) => item.id === productId).price;
-          setSubtotal(tempPrice);
+          setSubtotal(temporaryPrice);
           return;
         }
       }
@@ -99,7 +99,7 @@ export default function App() {
   const handleOnCheckoutFormChange = (name, value) => {};
 
   const handleOnSubmitCheckoutForm = () => {};
-
+  
   return (
     <div className="app">
       <BrowserRouter>
@@ -108,6 +108,7 @@ export default function App() {
             <Route
               path="/"
               element={
+          
                 <Home
                   handleOnToggle={handleOnToggle}
                   handleOnCheckoutFormChange={handleOnCheckoutFormChange}

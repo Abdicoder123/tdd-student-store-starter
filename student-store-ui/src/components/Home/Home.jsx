@@ -9,14 +9,14 @@ import Contact from "../Contact/Contact";
 import { useState } from "react";
 
 export default function Home(props) {
-  const [open, setOpen] = useState(true);
-  const [all, setAll] = useState(null);
-  const [clothing, setClothing] = useState(null);
-  const [food, setFood] = useState(null);
-  const [accessories, setAccessories] = useState(null);
-  const [tech, setTech] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState("");
-  const [searchText, setSearchText] = useState("");
+  const [open, setOpen] = React.useState(true);
+  const [all, setAll] = React.useState(null);
+  const [clothing, setClothing] = React.useState(null);
+  const [food, setFood] = React.useState(null);
+  const [accessories, setAccessories] = React.useState(null);
+  const [tech, setTech] = React.useState(null);
+  const [selectedCategory, setSelectedCategory] = React.useState("");
+  const [searchText, setSearchText] = React.useState("");
 
   const handleOnTextChange = (event) => {
     setSearchText(event.target.value);
@@ -31,7 +31,7 @@ export default function Home(props) {
   };
 
   const handleReset = () => {
-    props.setShoppingCart([]);
+    //props.setShoppingCart([]);
     props.setSubtotal(0);
   };
 

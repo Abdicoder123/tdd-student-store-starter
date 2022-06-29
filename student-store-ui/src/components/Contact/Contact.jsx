@@ -23,12 +23,12 @@ export default function Contact() {
               <span>612 Mean Ave, San Francisco, CA</span>
             </li>
           </ul>
-          <div className="media">
+          {/* <div className="media">
             <img
               alt="codepath"
               src="https://codepath-student-store-demo.surge.sh/assets/happy_person.517b658d.svg"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
