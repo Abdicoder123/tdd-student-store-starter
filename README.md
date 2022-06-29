@@ -11,21 +11,21 @@ I do not have anything to capture just yet on a gif and giphy capture is not wor
 
 #### Core Features
 
-- [ ] Displays the following sections: header, banner, search, product grid, about, contact, and footer.
-- [ ] On initial page load, display the products at the [GET /store endpoint](https://codepath-store-api.herokuapp.com/store).
-- [ ] User can click on the categories (Clothing, food, etc) to filter the product grid by type.
-- [ ] User can search for products.
-- [ ] User can click on a product in the grid to view additional product details. Navigation is via a React Router.
-- [ ] User can click to expand the shopping cart in the left navigation.
-- [ ] User can click the '+' button on a product cart to increment that product in the shopping cart.
-- [ ] User can click the '-' button on a product cart to increment that product in the shopping cart.
-- [ ] Shopping cart displays a table of products, quantities, subtotal, tax, and total.
+- [*] Displays the following sections: header, banner, search, product grid, about, contact, and footer.
+- [*] On initial page load, display the products at the [GET /store endpoint](https://codepath-store-api.herokuapp.com/store).
+- [*] User can click on the categories (Clothing, food, etc) to filter the product grid by type.
+- [*] User can search for products.
+- [*] User can click on a product in the grid to view additional product details. Navigation is via a React Router.
+- [*] User can click to expand the shopping cart in the left navigation.
+- [*] User can click the '+' button on a product cart to increment that product in the shopping cart.
+- [*] User can click the '-' button on a product cart to increment that product in the shopping cart.
+- [*] Shopping cart displays a table of products, quantities, subtotal, tax, and total.
 - [ ] User can check out, and can view receipt upon completion.
 
 #### Stretch Features
 
-- [ ] User can click in the top navigation bar to scroll to the relevant section.
-- [ ] User sees a "not found" display when searching for a nonexistent product.
+- [*] User can click in the top navigation bar to scroll to the relevant section.
+- [*] User sees a "not found" display when searching for a nonexistent product.
 - [ ] Create an endpoint for fetching all orders in the database, and an endpoint for serving an individual order based on its id.
 - [ ] Build a page in the UI that displays the list of all past orders and lets the user click on any individual order to take them to a more detailed page of the transaction.
 - [ ] Allow users to use an input to filter orders by the email of the person who placed the order.
@@ -289,17 +289,16 @@ The following specifications were met on the Express backend and the React front
 
 - Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-The feature of routes kind of left me unprepared and we did not go over it before the lecture.
+The feature of routes kind of left me unprepared and we did not go over it before the lecture. I also had issues with working on the shoppingCart portion of my project.
 
 - If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
 
 If I had more time I would do this lab in the right way I kind of approached it wrongly and set it up wrongly because
-I kind of missed the lectures a bit.
+I kind of missed the lectures a bit. 
 
 - Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-The things that didn't go as planned was setting up the page correctly I didn't up my Product Grid and Product Card which I
-will do and turn in this assignment again.
+I did work on all the parts of my lab but what angered me and fustrated me was that I couldn't demo my project properly and the bugs I had were very annoying and nonsensical at times.
 
 ### Open-source libraries used
 
@@ -307,4 +306,4 @@ will do and turn in this assignment again.
 
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+Special shout out to some peers like Joram and Abdirahman Ali(Ali) for helping me out a bit with my project.
