@@ -1,22 +1,26 @@
 import * as React from "react";
+import Logo from "../Logo/Logo";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <Logo />
-      <div className="link">
-        <a hhref="/" className="link">
-          Home
-        </a>
-        <a href="/About" className="link">
-          About
-        </a>
-        <a href="/" className="link">
-          Buy Now
-        </a>
-      </div>
+      <Logo className="logo" />
+      <ul className="link">
+        <li>
+          <Link to="/"> Home </Link>
+        </li>
+        <li>
+          <a href="/#AboutUs"> About Us </a>
+        </li>
+        <li>
+          <a href="/#ContactUs"> Contact Us here </a>
+        </li>
+        <li>
+          <a href="/#BuyNow"> Buy Now!</a>
+        </li>
+      </ul>
     </nav>
   );
 }

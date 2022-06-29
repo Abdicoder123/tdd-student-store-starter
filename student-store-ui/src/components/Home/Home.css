@@ -6,3 +6,225 @@
   display: flex;
   flex-direction: column;
 }
+
+.sub-navbar {
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.sub-navbar .content {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sub-navbar .content .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+}
+
+.sub-navbar .content .search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin-right: 40px;
+}
+
+.sub-navbar .content .search-bar input {
+  height: 40px;
+  padding-left: 15px;
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border: solid 1px #e4e4e4;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  font-size: 16px;
+  width: 500px;
+  transform: translateX(-180px);
+}
+
+.sub-navbar .content .search-bar i {
+  height: 40px;
+  width: 40px;
+  background: #00c385;
+  color: white;
+  fill: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-180px);
+}
+
+.sub-navbar .content .links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 400px;
+}
+
+.sub-navbar .content .help {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+}
+
+.sub-navbar .content .help i {
+  color: #969696;
+  margin-right: 10px;
+}
+
+.sub-navbar .content .cart {
+  color: white;
+  background-color: #00c385;
+  width: 170px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.sub-navbar .content .cart a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+}
+.sub-navbar .content .cart i {
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.sub-navbar .hamburger-menu {
+  margin-right: 40px;
+}
+
+.sub-navbar .hamburger-menu i {
+  cursor: pointer;
+  color: #969696;
+  transform: translateY(-3px);
+}
+
+.sub-navbar .category-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  list-style-type: none;
+  height: 40px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.sub-navbar .category-menu.closed {
+  display: none;
+}
+
+.hamburger-menu .li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.sub-navbar .category-menu li button {
+  cursor: pointer;
+  transition: all 0.1s ease;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px transparent;
+  transition: all 0.2s ease;
+}
+
+.sub-navbar .category-menu li.is-active button {
+  border-bottom: solid 2px #00c385;
+}
+
+.sub-navbar .category-menu li.is-inactive button {
+  border-bottom: 0px;
+}
+
+.footer {
+  width: 100%;
+  max-width: 100vw;
+  height: 350px;
+  background: white;
+}
+
+.footer .content {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer .content .top {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  padding-top: 40px;
+}
+
+.footer .content .top .links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer .content .top .links .link-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer .content .top .links .link-column ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.footer .content .top .links .link-column ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #5b5b5b;
+  margin-top: 10px;
+}

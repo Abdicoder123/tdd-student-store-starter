@@ -1,0 +1,12 @@
+.shopping-cart {
+  width: 100%;
+  color: white;
+}
+
+.shopping-cart .closed {
+  display: none;
+}
+
+.shopping-cart .open {
+  max-width: 550px;
+}
