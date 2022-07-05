@@ -8,3 +8,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.errorMsg{
+  
+  text-align: center;
+  font-size: xx-large;
+  color: #00c385;
+  font-style: italic;
+}

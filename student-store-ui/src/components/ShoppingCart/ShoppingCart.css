@@ -1,3 +1,33 @@
+.material-icons.md-48 {
+  font-size: 40px;
+  color: white;
+}
+
+.shopping-cart .CartTable {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.shopping-cart .CartTable .header {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: solid 1px #e4e4e4;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.shopping-cart .header-row {
+  display: flex;
+  height: 50px;
+  background: #17627d;
+  margin-bottom: 15px;
+}
+
+
 .shopping-cart {
   width: 100%;
   color: white;
@@ -9,4 +39,121 @@
 
 .shopping-cart .open {
   max-width: 550px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+.notif {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-cart .open > h3 {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.shopping-cart .header-row span {
+  flex: 1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.shopping-cart .flex-2 {
+  padding-left: 10px;
+}
+
+.shopping-cart .header-row span.center {
+  display: flex;
+  justify-content: center;
+}
+
+.shopping-cart .product-row {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  border-bottom: solid 1px #e4e4e4;
+}
+
+.shopping-cart .product-row span {
+  flex: 1;
+}
+
+.shopping-cart .product-row span.center {
+  display: flex;
+  justify-content: center;
+}
+
+.shopping-cart .receipt {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.shopping-cart .receipt .receipt-subtotal,
+.shopping-cart .receipt .receipt-taxes,
+.shopping-cart .receipt .receipt-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.shopping-cart .receipt .label {
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.shopping-cart .receipt span {
+  flex: 1;
+}
+
+.shopping-cart .receipt span.center {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.shopping-cart .receipt .receipt-total {
+  border-top: solid 1px #e4e4e4;
+}
+
+span,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  color: #2e1e80;
+}
+
+.notification {
+  color: white;
+  text-align: center;
+  margin: 10px;
 }
