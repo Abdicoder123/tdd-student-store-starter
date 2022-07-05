@@ -1,7 +1,12 @@
 import * as React from "react";
+//import { checkout } from "../../../../student-store-express-api/app";
 import "./checkOutForm.css";
 
-export default function CheckoutForm({ isOpen }) {
+export default function CheckoutForm({ isOpen, 
+  shoppingCart, handleOnSubmitCheckoutForm, handleOnCheckoutFormChange, checkoutForm }) {
+
+  console.log("name", CheckoutForm?.name);
+  console.log("email?", CheckoutForm?.email);
   return (
     <div className={isOpen ? "checkout-form" : "checkout-form closed"}>
       <h3>
@@ -18,6 +23,7 @@ export default function CheckoutForm({ isOpen }) {
             className="checkout-form-input"
             type="text"
             placeholder="Student Name"
+            onChange={handleOnCheckoutFormChange}
           />
         </div>
       </div>
@@ -29,6 +35,8 @@ export default function CheckoutForm({ isOpen }) {
             className="checkout-form-input"
             type="email"
             placeholder="student@codepath.org"
+            onChange={handleOnCheckoutFormChange}
+            value={CheckoutForm? CheckoutForm.email: ""}
           />
         </div>
       </div>
@@ -51,7 +59,9 @@ export default function CheckoutForm({ isOpen }) {
       <p className="is-danger"></p>
       <div className="field">
         <div className="control">
-          <button className="button checkout-button">Checkout here!</button>
+          <button className="button checkout-button"
+          onClick={()=> {handleOnSubmitCheckoutForm(checkoutForm, shoppingCart)}}
+          > Checkout here!</button>
         </div>
       </div>
       <div className="checkout-success">
@@ -62,7 +72,7 @@ export default function CheckoutForm({ isOpen }) {
           </span>
         </h3>
         <div className="content">
-          <p>We'll send a comfirmation email to confirm your identity.</p>
+          <p>We'll send a comfirmation email to confirm your identity shortly.</p>
         </div>
       </div>
     </div>

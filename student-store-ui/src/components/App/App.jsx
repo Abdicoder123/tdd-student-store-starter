@@ -96,9 +96,29 @@ export default function App() {
     }
   };
 
-  const handleOnCheckoutFormChange = (name, value) => {};
 
-  const handleOnSubmitCheckoutForm = () => {};
+
+   const handleOnCheckoutFormChange = (set) => {
+    let userInfo = {...checkoutForm};
+    userInfo[set.target.name] = set.target.value;
+    setcheckoutForm(userInfo);
+  };
+
+ 
+  const handleOnSubmitCheckoutForm = async(userInfo, shoppingCart) => {
+    console.log('shoppingCwart:', shoppingCart);
+    console.log('userInfo: ', userInfo);
+    const response = await axios.post("http://localhost:3001/store",{
+      user:{
+        "name": userInfo.name,
+        "email": userInfo.email,
+      }, "shoppingCart": shoppingCart
+    })
+    .then(function(response){
+      console.log(response);
+    })
+
+  };
   
   return (
     <div className="app">
