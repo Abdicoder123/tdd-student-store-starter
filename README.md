@@ -20,7 +20,7 @@ https://www.loom.com/share/9ec229bd75674abfb5ad62bdd39990d6
 - [*] User can click the '+' button on a product cart to increment that product in the shopping cart.
 - [*] User can click the '-' button on a product cart to increment that product in the shopping cart.
 - [*] Shopping cart displays a table of products, quantities, subtotal, tax, and total.
-- [ ] User can check out, and can view receipt upon completion.
+- [*] User can check out, and can view receipt upon completion.
 
 #### Stretch Features
 
